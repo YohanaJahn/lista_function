@@ -6,11 +6,16 @@
     */
 
     //Entrada
-
+    let fahrenheit = Number(prompt("Insira uma temperatura em graus Fahrenheit para converter para Celsius:").trim());
+    let celsius = 0;
 
     //Processamento
-
+    function converter() {
+        celsius = (fahrenheit - 32) * 5 / 9
+        return celsius;
+    }
 
     //Saída
+    alert(`A temperatura ${fahrenheit}°F para celsius fica em ${converter().toFixed(0)}°C.`);
 
 </script>

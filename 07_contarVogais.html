@@ -7,11 +7,19 @@
     */
 
     //Entrada
-
+    let palavra = prompt("Insira uma palavra:").trim().toUpperCase();
+    let valor = 0;
 
     //Processamento
-
+    function vogais() {
+        for (const letra of palavra) {
+            if (letra == "A" || letra == "E" || letra == "I" || letra == "O" || letra == "U") {
+                valor++;
+            }
+        }
+        return valor;
+    }
 
     //Saída
-
+    alert(`A quantidade de vogais na palavra ${palavra.toLowerCase()} é de ${vogais()}.`)
 </script>

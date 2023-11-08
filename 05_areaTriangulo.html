@@ -6,11 +6,17 @@
     */
 
     //Entrada
-
+    let base = Number(prompt("Insira o valor da base do triângulo:").trim());
+    let altura = Number(prompt("Insira o valor da altura do triângulo:").trim())
+    let area = 0;
 
     //Processamento
-
+    function areaTriangulo() {
+        area = (base * altura) / 2;
+       return area; 
+    }
 
     //Saída
+    alert(`A área desse triângulo com as medidas inseridas anteriormente é de ${areaTriangulo().toFixed(0)}.`);
 
 </script>

@@ -6,11 +6,15 @@
     */
 
     //Entrada
-
-
+    let celsius = Number(prompt("Insira uma temperatura em celsius para converter para Fahrenheit:").trim());
+    let fahrenheit = 0;
     //Processamento
-
+    function converter() {
+        fahrenheit = (9 * celsius + 160) / 5;
+        return fahrenheit;
+    }
 
     //Saída
+    alert(`A temperatura ${celsius}°C para Fahrenheit fica em ${converter()}°F.`);
 
 </script>
